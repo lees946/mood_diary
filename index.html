@@ -1,0 +1,150 @@
+<html>
+  <head>
+ 
+    <link href='style.css' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <div class="menu">
+      
+           <!-- Menu icon -->
+          <ul>
+            
+            <li class="diaryIcon"><a href="#" title="diary"><img src="image/diary_icon.png"/></a></li>
+            <li class="graphIcon"><a href="#" title="graphic"><img src="image/graph_icon.png"/></a></li>
+            <li class="alarmIcon"><a href="#" title="alarm"><img src="image/alarm_icon.png"/></a></li>
+            <li class="mygroupIcon"><a href="#" title="account"><img src="image/account_icon.png"/></a></li>
+            
+          </ul>
+    </div>
+
+        <!-- login page -->
+
+        <div class="contents">
+
+            <div class="menuIcon" title="menu">
+             </div>
+                  <div class="aboutPage">
+                     <p> <font size="6">  Mood Diary </font> <br>
+                      Mood Diary is diary that visualize your flow of mood and thoughts from 
+                      recored input. This diary have input of time, event, comments and drop down menu to
+                      select your mood for each event. So at the end of the day, you can record what
+                      you did on that day, your thoughts and your feelings. On graph page, you can
+                      see daily data and monthly data and a graph. The graph will depict emotions
+                      like pleasure, passion, calmness, anxiety, tiredness and depression in color and
+                      over time. Graphs will display a day or week or month.
+         
+                     </p>
+                  </div>
+                 <form action="login.php" method="post" id="loginBox">
+                            
+                              <input type="text" name="username" value="USERNAME" id="loginId" >
+                              <input type="text" name="password" value="PASSWORD" id="loginPassword" >
+                              <input type="submit" name="login" value="login" class="loginInsert">
+                              <input type="submit" name="register" value="register" class="loginRegister">
+                 </form>
+          
+
+        </div>
+
+        <!-- "diary" page -->
+        <div class="diaryPage">
+            
+                 <form action="diary.php" method="post">
+                      <select class="diaryInput" name="mood" id="myMood">
+                          <option value="Happy">Happy</option>
+                          <option value="Energetic">Energetic</option>
+                          <option value="Pleaceful">Pleaceful</option>
+                          <option value="Anxious">Anxious</option>
+                          <option value="Tired">Tired</option>
+                          <option value="Depressed">Depressed</option>
+                      </select>
+                      <input type="text" value="your location" name="location" class="diaryInput" id="diaryLocation" >
+                      <input type="text" value="comment" name="comment" class="diaryInput" id="diaryEvent" >
+                      <input type="submit" name="submit"  value="Submit" class="diaryInput" id="diaryInsert" >
+
+                  </form>      
+            </p>
+        </div>
+        <!-- "graph" page -->
+        <div class="graphPage">
+            <ul>
+              
+              <li>mood level <br>
+                  <img src="image/slider.png" >
+              </li>
+              
+              
+              <li>time period <br>
+                  <img src="image/slider.png" >
+              </li>
+              
+              
+              <li>... <br>
+                   <img src="image/slider.png">
+              </li>  
+              
+            </ul>
+        </div>
+
+        <!-- "my group" page -->
+        <div class="mygroupPage">
+            
+              <div id="groupdiv1">
+                  <li>My information</li>
+                  <li>name :</li>
+                  <li>ID :</li>
+                  <li>birth :</li>
+              </div>
+            
+             
+            
+        </div>
+
+        <!-- "alarm" page -->
+       <div class="alarmPage">
+               <p id="clock"></p>
+            <form>
+                          <select id="timeset">
+                              <option value="3">3 second</option>
+                              <option value="600">10 minute</option>
+                              <option value="1800">30 minute</option>
+                              <option value="3600">1 hour</option>
+                              <option value="7200">2 hour</option>
+                              <option value="10800">3 hour</option>
+                          </select>
+                        
+            </form>
+            <button id="insert-button">Start timer</button>
+             <button onclick="clearInterval(interval)">Stop timer</button>
+
+            <embed src="http://www.stdimension.org/MediaLib/effects/computer/federation/alarm5.wav" autostart=false width=1 height=1 id="sound1"
+          enablejavascript="true">
+
+
+       </div>
+
+
+
+        <!-- "register" page -->
+        <div class="registerPage">
+          <form action="register.php" method="post">
+            Register
+            ID:<input type="text"  name="id" id="registerid" >
+            Password:<input type="text"  name="password" id="registerPassword" >
+            First Name:<input type="text"  name="first_name" id="registerName" >
+            Last Name:<input type="text"  name="last_name" id="registerName" >
+            Email:<input type="text"  name="email" id="registerEmail" >
+            
+            <input type="submit" class="registerInsert" name="submit" value="Submit">
+        </div>
+    
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="alarm.js"></script>
+  </body>
+</html>
