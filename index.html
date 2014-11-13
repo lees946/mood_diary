@@ -1,7 +1,7 @@
 <html>
   <head>
  
-    <link href='style.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -37,7 +37,7 @@
          
                      </p>
                   </div>
-                 <form action="login.php" method="post" id="loginBox">
+                 <form action="php/login.php" method="post" id="loginBox">
                             
                               <input type="text" name="username" value="USERNAME" id="loginId" >
                               <input type="text" name="password" value="PASSWORD" id="loginPassword" >
@@ -51,7 +51,7 @@
         <!-- "diary" page -->
         <div class="diaryPage">
             
-                 <form action="diary.php" method="post">
+                 <form action="php/diary.php" method="post">
                       <select class="diaryInput" name="mood" id="myMood">
                           <option value="Happy">Happy</option>
                           <option value="Energetic">Energetic</option>
@@ -129,7 +129,7 @@
 
         <!-- "register" page -->
         <div class="registerPage">
-          <form action="register.php" method="post">
+          <form action="php/register.php" method="post">
             Register
             ID:<input type="text"  name="id" id="registerid" >
             Password:<input type="text"  name="password" id="registerPassword" >
@@ -144,7 +144,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script src="alarm.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/alarm.js"></script>
   </body>
 </html>
