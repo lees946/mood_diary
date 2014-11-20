@@ -14,7 +14,7 @@
             <li class="diaryIcon"><a href="#" title="diary"><img src="image/diary_icon.png"/></a></li>
             <li class="graphIcon"><a href="#" title="graphic"><img src="image/graph_icon.png"/></a></li>
             <li class="alarmIcon"><a href="#" title="alarm"><img src="image/alarm_icon.png"/></a></li>
-            <li class="mygroupIcon"><a href="#" title="account"><img src="image/account_icon.png"/></a></li>
+            <li class="contactIcon"><a href="#" title="contact"><img src="image/account_icon.png"/></a></li>
             
           </ul>
     </div>
@@ -37,12 +37,21 @@
          
                      </p>
                   </div>
-                 <form action="php/login.php" method="post" id="loginBox">
-                            
-                              <input type="text" name="username" value="USERNAME" id="loginId" >
-                              <input type="text" name="password" value="PASSWORD" id="loginPassword" >
-                              <input type="submit" name="login" value="login" class="loginInsert">
-                              <input type="submit" name="register" value="register" class="loginRegister">
+                 <form action="php/input.php" method="post" id="loginBox">
+                          <div id="time"></div>
+                          <input type="text" name="username" value="USERNAME" id="loginId" >
+                          <select class="diaryInput" name="mood" id="myMood">
+                          <option value="Happy">Happy</option>
+                          <option value="Energetic">Energetic</option>
+                          <option value="Pleaceful">Pleaceful</option>
+                          <option value="Anxious">Anxious</option>
+                          <option value="Tired">Tired</option>
+                          <option value="Depressed">Depressed</option>
+                          </select>
+                          <input type="text" value="your location" name="location" class="diaryInput" id="diaryLocation" >
+                          <input type="text" value="comment" name="comment" class="diaryInput" id="diaryEvent" >
+                          <input type="submit" name="submit"  value="Submit" class="diaryInput" id="diaryInsert" >
+
                  </form>
           
 
@@ -51,37 +60,25 @@
         <!-- "diary" page -->
         <div class="diaryPage">
             
-                 <form action="php/diary.php" method="post">
-                      <select class="diaryInput" name="mood" id="myMood">
-                          <option value="Happy">Happy</option>
-                          <option value="Energetic">Energetic</option>
-                          <option value="Pleaceful">Pleaceful</option>
-                          <option value="Anxious">Anxious</option>
-                          <option value="Tired">Tired</option>
-                          <option value="Depressed">Depressed</option>
-                      </select>
-                      <input type="text" value="your location" name="location" class="diaryInput" id="diaryLocation" >
-                      <input type="text" value="comment" name="comment" class="diaryInput" id="diaryEvent" >
-                      <input type="submit" name="submit"  value="Submit" class="diaryInput" id="diaryInsert" >
-
-                  </form>      
+                 
             </p>
         </div>
         <!-- "graph" page -->
         <div class="graphPage">
             <ul>
               
+              <li>username<br>
+                  <input type="text" value="username" name="unsername" class="graphInput">
+                  <input type="submit" value="submit" name="submit" class="graphInput">
+              </li>
+              
+              
               <li>mood level <br>
                   <img src="image/slider.png" >
               </li>
               
               
-              <li>time period <br>
-                  <img src="image/slider.png" >
-              </li>
-              
-              
-              <li>... <br>
+              <li>time period<br>
                    <img src="image/slider.png">
               </li>  
               
@@ -89,7 +86,7 @@
         </div>
 
         <!-- "my group" page -->
-        <div class="mygroupPage">
+        <div class="contactPage">
             
               <div id="groupdiv1">
                   <li>My information</li>

@@ -1,8 +1,10 @@
 var main = function() {
 
+    var d = new Date();
+    document.getElementById("time").innerHTML = d.getDate();
 
     var $toggle = 0;
-    $(".alarmPage,.diaryPage,.mygroupPage,.graphPage,.registerPage").hide();
+    $(".alarmPage,.diaryPage,.contactPage,.graphPage,.registerPage").hide();
     
     // menu toggle animation
     $(".loginInsert,.menuIcon,.loginRegister").click(function(){
@@ -20,7 +22,7 @@ var main = function() {
         
           $toggle = 0;
         }
-        $("#loginBox,.aboutPage,.diaryPage,.mygroupPage,.graphPage,.registerPage,.alarmPage").hide();
+        $("#loginBox,.aboutPage,.diaryPage,.contactPage,.graphPage,.registerPage,.alarmPage").hide();
          $('body').css('background-Image', 'url(image/graph_bg2.jpg)');
        
     });
@@ -35,24 +37,24 @@ var main = function() {
      // "diary" page toggle
     $(".diaryIcon").click(function(){
         $(".diaryPage").fadeToggle("slow");
-        $(".aboutPage,.alarmPage,.mygroupPage,.graphPage").hide();
+        $(".aboutPage,.alarmPage,.contactPage,.graphPage").hide();
     });
      // "group" page toggle
-    $(".mygroupIcon").click(function(){
-        $(".mygroupPage").fadeToggle("slow");
+    $(".contactIcon").click(function(){
+        $(".contactPage").fadeToggle("slow");
         $(".aboutPage,.alarmPage,.diaryPage,.graphPage").hide();
 
     });
     // "alarm" page toggle
     $(".alarmIcon").click(function(){
         $(".alarmPage").fadeToggle("slow");
-        $(".aboutPage,.mygroupPage,.diaryPage,.graphPage").hide();
+        $(".aboutPage,.contactPage,.diaryPage,.graphPage").hide();
 
     });
      // "graph" page toggle
      $(".graphIcon").click(function(){
         $(".graphPage").fadeToggle("slow");
-        $(".aboutPage,.alarmPage,.diaryPage,.mygroupPage").hide();
+        $(".aboutPage,.alarmPage,.diaryPage,.contactPage").hide();
         $('body').css('backgroundImage', 'url(image/graph_bg1.jpg)');
     });
 
