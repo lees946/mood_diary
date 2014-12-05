@@ -1,7 +1,12 @@
 var main = function() {
 
-    var d = new Date();
-    document.getElementById("time").innerHTML = d.getDate();
+     //get json data from query.php
+     $.getJSON('query.php', function(data) {
+      $.each(data, function(key,val) {
+        $("#" + fieldName).val(fieldValue);
+      });
+    });
+    
 
     var $toggle = 0;
     $(".alarmPage,.diaryPage,.contactPage,.graphPage,.registerPage").hide();
@@ -57,6 +62,8 @@ var main = function() {
         $(".aboutPage,.alarmPage,.diaryPage,.contactPage").hide();
         $('body').css('backgroundImage', 'url(image/graph_bg1.jpg)');
     });
+
+
 
 };
 $(document).ready(main);

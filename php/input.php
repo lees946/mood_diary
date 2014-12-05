@@ -1,8 +1,8 @@
 <?php
-$servername = 'localhost';
-$username = 'root';
-$password = 'root';
-$dbname = 'form_login';
+$servername = "morodesignnet.ipagemysql.com";
+$username = "monofx321";
+$password = "jinolee";
+$dbname = "form";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -17,16 +17,21 @@ $value3 = $_POST['location'];
 $value4 = $_POST['comment'];
 
 
-
+// sql to create table
 $sql = "INSERT INTO login (username, mood, location, comment)
 VALUES ('$value1', '$value2', '$value3', '$value4')";
 
 if ($conn->query($sql) === TRUE) {
+    Header ("Location:query.php");
     
-    Header ("Location:../index.html");
+
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Error creating table: " . $conn->error;
+
 }
+
+
 
 $conn->close();
 ?>
+
