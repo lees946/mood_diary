@@ -1,0 +1,35 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf160
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 username,mood,location,comment,month,day\
+dean0321,Anxious,hospital,test,10,2\
+dean0321,Happy,home,dkdkdkdk,10,3\
+dean0321,Tired,home,homework..,10,4\
+dean0321,Anxious,hospital,test,10,5\
+dean0321,Happy,home,dkdkdkdk,10,10\
+dean0321,Anxious,hospital,test,10,13\
+dean0321,Happy,home,dkdkdkdk,10,20\
+dean0321,Energetic,home,homework..,10,23\
+dean0321,Peaceful,hospital,test,10,25\
+dean0321,Happy,home,dkdkdkdk,10,30\
+dean0321,Depressed,home, homework..,11,2\
+dean0321,Anxious,hospital,test,11,3\
+dean0321,Happy,home,dkdkdkdk,11,4\
+dean0321,Tired,home,homework..,11,5\
+dean0321,Energetic,hospital,test,11,7\
+dean0321,Happy,home,dkdkdkdk,11,9\
+dean0321,Anxious,hospital,test,11,13\
+dean0321,Happy,home,dkdkdkdk,11,15\
+dean0321,Energetic,home,homework..,11,20\
+dean0321,Peaceful,hospital,test,11,23\
+dean0321,Happy,home,dkdkdkdk,11,25\
+dean0321,Depressed,home, homework..11,30\
+monofx321,Anxious,hospital,test,11,5\
+monofx321,Happy,home,dkdkdkdk,11,10\
+monofx321,Tired,home,homework..,11,13\
+monofx321,Anxious,hospital,test,11,17\
+monofx321,Happy,home,dkdkdkdk,11,20\
+monofx321,Tired,home,homework..,11,25}

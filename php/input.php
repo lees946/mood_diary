@@ -22,7 +22,7 @@ $sql = "INSERT INTO login (username, mood, location, comment)
 VALUES ('$value1', '$value2', '$value3', '$value4')";
 
 if ($conn->query($sql) === TRUE) {
-    Header ("Location:query.php");
+    Header ("Location:../index.html");
     
 
 } else {

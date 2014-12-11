@@ -1,6 +1,6 @@
 <html>
   <head>
- 
+    <script type="text/javascript" src="processing.js"></script>
     <link href='css/style.css' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
   </head>
@@ -12,7 +12,7 @@
           <ul>
             
             <li class="diaryIcon"><a href="#" title="diary"><img src="image/diary_icon.png"/></a></li>
-            <li class="graphIcon"><a href="#" title="graphic"><img src="image/graph_icon.png"/></a></li>
+            <li class="graphIcon" ><a href="#" title="graphic"><img src="image/graph_icon.png"/></a></li>
             <li class="alarmIcon"><a href="#" title="alarm"><img src="image/alarm_icon.png"/></a></li>
             <li class="contactIcon"><a href="#" title="contact"><img src="image/account_icon.png"/></a></li>
             
@@ -50,52 +50,35 @@
                           <option value="Depressed">Depressed</option>
                           </select>
                           <input type="text" value="your location" name="location" class="diaryInput" id="diaryLocation" >
-                          <input type="text" value="comment" name="comment" class="diaryInput" id="diaryEvent" >
                           <input type="submit" name="submit"  value="Submit" class="diaryInput" id="diaryInsert" >
                           
 
                  </form>
-                
+
           
 
         </div>
 
         <!-- "diary" page -->
         <div class="diaryPage">
+          <p id="diaryList"></p>
             
-                 
-            </p>
         </div>
         <!-- "graph" page -->
-        <div class="graphPage">
-            <ul>
-              
-              <li>username<br>
-                  <input type="text" value="username" name="unsername" class="graphInput">
-                  <input type="submit" value="submit" name="submit" class="graphInput">
-              </li>
-              
-              
-              <li>mood level <br>
-                  <img src="image/slider.png" >
-              </li>
-              
-              
-              <li>time period<br>
-                   <img src="image/slider.png">
-              </li>  
-              
-            </ul>
+        <div class="graphPage" >
+          
+           <canvas id="test" data-processing-sources="bubbles/bubbles.pde" width="1050" height="700"></canvas>
+           
         </div>
 
         <!-- "my group" page -->
         <div class="contactPage">
             
               <div id="groupdiv1">
-                  <li>My information</li>
-                  <li>name :</li>
-                  <li>ID :</li>
-                  <li>birth :</li>
+                  <li>Name : Seung Hyung Lee</li>
+                  <li>Email: monofx321@gmail.com</li>
+                  <li>Phone: 310.383.0724</li>
+                  <li>Address: 163 Washington ave, 6A, Brooklyn, NY 11205</li>
               </div>
             
              
@@ -127,22 +110,10 @@
 
 
 
-        <!-- "register" page -->
-        <div class="registerPage">
-          <form action="php/register.php" method="post">
-            Register
-            ID:<input type="text"  name="id" id="registerid" >
-            Password:<input type="text"  name="password" id="registerPassword" >
-            First Name:<input type="text"  name="first_name" id="registerName" >
-            Last Name:<input type="text"  name="last_name" id="registerName" >
-            Email:<input type="text"  name="email" id="registerEmail" >
-            
-            <input type="submit" class="registerInsert" name="submit" value="Submit">
-        </div>
-    
-    
-
-
+       
+        <script type="text/javascript">
+     
+       </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="script/script.js"></script>
     <script src="script/alarm.js"></script>
